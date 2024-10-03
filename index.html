@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Word Scramble Game</h1>
+
+        <div class="category-selection">
+            <label for="category">Choose Category:</label>
+            <select id="category">
+                <option value="animals">Animals</option>
+                <option value="fruits">Fruits</option>
+                <option value="countries">Countries</option>
+            </select>
+            <button id="start-btn">Start Game</button>
+        </div>
+
+        <div id="game-section" class="hidden">
+            <h2 id="scrambled-word"></h2>
+            <input type="text" id="guess" placeholder="Your guess" autocomplete="off">
+            <button id="submit-btn">Submit</button>
+            <p id="message"></p>
+            <p id="timer">Time left: 10s</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
